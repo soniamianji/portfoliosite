@@ -1,36 +1,40 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title class="headline text-uppercase">
-        <span>Vuetify</span>
-        <span class="font-weight-light">MATERIAL DESIGN</span>
+    <v-app-bar app flat extended>
+      <v-toolbar-title class="logoStyle mt-12">
+        <span>Sonia Johnsson</span>
       </v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn
-        text
-        href="https://github.com/vuetifyjs/vuetify/releases/latest"
-        target="_blank"
-      >
-        <span class="mr-2">Latest Release</span>
-      </v-btn>
+
+      <v-toolbar-items class="headerFonts mx-auto mt-12">
+        <v-btn to="/" text class="grey--text text--lighten">Projects</v-btn>
+        <v-btn to="/profile" class="grey--text text--lighten" text>Profile</v-btn>
+        <v-btn to="/contact" class="grey--text text--lighten" text>Contact</v-btn>
+      </v-toolbar-items>
     </v-app-bar>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <router-view />
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld,
-  },
+  name: "App",
+  components: {},
   data: () => ({
     //
-  }),
+  })
 };
 </script>
+
+<style>
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:300|Rubik:500&display=swap");
+.logoStyle {
+  font-family: "Rubik", sans-serif;
+}
+.headerFonts {
+  font-family: "Open Sans", sans-serif;
+}
+.bodyFonts {
+  font-family: "Open Sans Condensed", sans-serif;
+}
+</style>
