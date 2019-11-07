@@ -1,8 +1,8 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Projects from "../views/Projects.vue";
-import Contact from "../views/Contact.vue";
 import Profile from "../views/Profile.vue";
+import ProjectPage from "../views/ProjectPage.vue";
 
 Vue.use(VueRouter);
 
@@ -18,9 +18,9 @@ const routes = [
     component: Profile
   },
   {
-    path: "/contact",
-    name: "contact",
-    component: Contact
+    path: "/:title",
+    name: "projectPage",
+    component: ProjectPage
   }
 ];
 
