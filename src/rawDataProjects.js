@@ -4,7 +4,7 @@ let Data = [
     data: {
       date: "FALL || 2018",
       header: "WhatsApp appRedesign",
-      role: "UX/UI design",
+      role: "UI design",
       content: [
         {
           type: "img",
@@ -15,44 +15,20 @@ let Data = [
         },
         {
           type: "text",
-          parag: ""
-        }
-      ]
-    }
-  },
-  {
-    title: "branding",
-    data: {
-      date: "FALL || 2017",
-      header: "Brand Identity",
-      role: "Graphic design",
-      content: [
-        {
-          type: "img",
-          src: [
-            require("@/assets/projects/branding/Branding-01.png"),
-            require("@/assets/projects/branding/Branding-02.jpg"),
-            require("@/assets/projects/branding/stationer.jpg"),
-            require("@/assets/projects/branding/Branding-03.png"),
-            require("@/assets/projects/branding/Branding-04.png"),
-            require("@/assets/projects/branding/Branding-05.png"),
-            require("@/assets/projects/branding/Branding-06.png")
-          ]
-        },
-        {
-          type: "text",
-          parag: ""
+          parag:
+            "Whatasapp app redesign created to give the app more of a Art Deco vibe.",
+          link: []
         }
       ]
     }
   },
 
   {
-    title: "uxdesign",
+    title: "UX-design",
     data: {
-      date: "FALL || 2017",
-      header: "Responsive Graphic",
-      role: "Graphic designer",
+      date: "Spring || 2019",
+      header: "UX-design",
+      role: "Ux-Design, Interaction Design",
       content: [
         {
           type: "img",
@@ -67,7 +43,54 @@ let Data = [
 
         {
           type: "text",
-          parag: ""
+          parag:
+            "UX design for kohlanta property management. This was built to suggest improvemnets to the already existing website.",
+          link: [
+            "https://xd.adobe.com/view/e6817629-6f0d-45f8-7c15-57d8f84dadab-90b0/"
+          ]
+        }
+      ]
+    }
+  },
+
+  {
+    title: "WebApplication",
+    data: {
+      date: "FALL || 2019",
+      header: "Client-server communication",
+      role: "full-stack developer",
+      content: [
+        {
+          type: "img",
+          src: [require("../src/assets/projects/bigpharma/home.png")]
+        },
+
+        {
+          type: "text",
+          parag:
+            "Bigpharma is a prototype of a survey app that collects, curates and analyzes users data in the context of pharmacetical development. It is bult with Vue.js, Node.js and Express.js.",
+          link: ["https://inspiring-feynman-0b43cb.netlify.com"]
+        }
+      ]
+    }
+  },
+  {
+    title: "Browser-based-game",
+    data: {
+      date: "FALL || 2017",
+      header: "Client-side programming",
+      role: "programmer",
+      content: [
+        {
+          type: "img",
+          src: [require("../src/assets/thumbnails/dropdead.png")]
+        },
+
+        {
+          type: "text",
+          parag:
+            "Dropdead is a browser based jump and shoot game that is built with Javascript and Phaser framework.",
+          link: ["https://soniamianji.github.io"]
         }
       ]
     }

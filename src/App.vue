@@ -2,32 +2,44 @@
   <v-app>
     <v-app-bar app flat extended>
       <v-toolbar-title class="logoStyle mt-12 pl-8">
-        <span>Sonia Johnsson</span>
+        <v-btn text to="/" @click="$vuetify.goTo('#intro')" class="text-none">Sonia Johnsson</v-btn>
       </v-toolbar-title>
 
       <v-toolbar-items class="bodyFonts mx-auto mt-12">
-        <v-btn to="/" text active-class="grey lighten-5" class="grey--text text--lighten">Projects</v-btn>
-        <v-btn to="/profile" text class="grey--text text--lighten">Bio</v-btn>
+        <v-btn
+          text
+          class="grey--text text--lighten"
+          to="/"
+          @click="$vuetify.goTo('#projects')"
+        >Projects</v-btn>
+        <v-btn text class="grey--text text--lighten" to="/" @click="$vuetify.goTo('#bio')">Bio</v-btn>
       </v-toolbar-items>
-      <template v-if="$vuetify.breakpoint.smAndUp" aligh="right">
-        <v-btn class="mt-12" text href="https://github.com/soniamianji">
-          <v-img src="./assets/github.png" aspect-ratio="1" class max-width="35" max-height="35"></v-img>
+      <template v-if="$vuetify.breakpoint.smAndUp" align="right">
+        <v-btn class="mt-12 iconOpacity" icon href="https://github.com/soniamianji">
+          <i class="fab fa-github fa-2x"></i>
         </v-btn>
         <v-btn
-          class="mt-12"
-          text
+          class="mt-12 iconOpacity"
+          icon
           href="https://www.linkedin.com/in/sonia-mianji-johnsson-b8750258/"
         >
           <a href="https://github.com/soniamianji"></a>
-          <v-img src="./assets/linkedin.png" aspect-ratio="1" class max-width="35" max-height="35"></v-img>
+          <i class="fab fa-linkedin-in fa-2x"></i>
         </v-btn>
-        <v-btn class="mt-12" text href="mailto:soniamianji1@gmail.com ">
-          <v-img src="./assets/gmail.png" aspect-ratio="1" max-width="35" max-height="35"></v-img>
+        <v-btn class="mt-12 iconOpacity" icon href="mailto:soniamianji1@gmail.com ">
+          <i class="fas fa-at fa-2x"></i>
         </v-btn>
       </template>
     </v-app-bar>
 
     <router-view />
+    <v-footer>
+      <v-row justify="center" class="bodyFonts" no-gutters>
+        Sonia Johnsson -
+        &copy;
+        {{ new Date().getFullYear() }}
+      </v-row>
+    </v-footer>
   </v-app>
 </template>
 
@@ -51,5 +63,22 @@ export default {
 }
 .bodyFonts {
   font-family: "Raleway", sans-serif;
+}
+.iconOpacity {
+  opacity: 0.3;
+}
+.iconOpacity:hover {
+  opacity: 1;
+}
+.v-btn:hover:before {
+  background-color: transparent;
+}
+
+.v-btn:hover .v-btn__content {
+  color: black;
+}
+
+.theme--light.v-btn--active::before {
+  opacity: 0 !important;
 }
 </style>

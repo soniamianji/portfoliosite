@@ -2,30 +2,30 @@
   <v-content class="grey lighten-5">
     <v-container pa-5 class="customWidth">
       <v-row>
-        <v-col cols="12" md="6">
-          <h3 class="headerFonts pl-8">{{title}}</h3>
-        </v-col>
-        <v-col cols="12" md="6" class="headerFonts">
+        <v-col cols="12" md="12">
           <v-expansion-panels>
             <v-expansion-panel class="elevation-0" v-for="(item,i) in 1" :key="i">
-              <v-expansion-panel-header>
-                Project Details
+              <v-expansion-panel-header class="bodyFonts font-weight-black">
+                {{title}}
                 <template v-slot:header>
                   <v-icon color="teal">mdi-check</v-icon>
                 </template>
               </v-expansion-panel-header>
-              <v-expansion-panel-content>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-expansion-panel-content>
-            </v-expansion-panel>
-          </v-expansion-panels>
-          <v-expansion-panels>
-            <v-expansion-panel class="elevation-0">
-              <v-expansion-panel-content v-for="(item,i) in 5" :key="i">
-                <template v-slot:header>
-                  <div>Item</div>
-                </template>
-                <v-card>
-                  <v-card-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</v-card-text>
-                </v-card>
+              <v-expansion-panel-content class="bodyFonts">Date: {{projectData.data.date}}</v-expansion-panel-content>
+
+              <v-expansion-panel-content class="bodyFonts">{{projectData.data.content[1].parag}}</v-expansion-panel-content>
+
+              <v-expansion-panel-content
+                v-if="projectData.data.content[1].link.length > 0"
+                class="bodyFonts"
+              >
+                <v-btn
+                  v-for="link in projectData.data.content[1].link"
+                  :key="link.index"
+                  :href="link"
+                  class="grey--text text--darken-1 text-none"
+                  outlined
+                >Check it out live</v-btn>
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -35,7 +35,9 @@
       <div>
         <v-row no-gutters>
           <v-col cols="12" v-for="items in projectData.data.content[0].src" :key="items">
-            <v-img :src="items" class="grey lighten-2" height="100%" align="center"></v-img>
+            <a :href="projectData.data.content[1].link[0]">
+              <v-img :src="items" class="grey lighten-2" height="100%" align="center"></v-img>
+            </a>
           </v-col>
         </v-row>
       </div>
@@ -60,7 +62,7 @@ export default {
         this.projectData = projectData[i];
       }
     }
-    console.log(this.projectData.data.content[0].src);
+    console.log(this.projectData.data.content[1].link);
   }
 };
 </script>

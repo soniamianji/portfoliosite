@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Projects from "../views/Projects.vue";
-import Profile from "../views/Profile.vue";
+import Portfolio from "../views/Portfolio.vue";
 import ProjectPage from "../views/ProjectPage.vue";
 
 Vue.use(VueRouter);
@@ -9,13 +8,8 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "projects",
-    component: Projects
-  },
-  {
-    path: "/profile",
-    name: "profile",
-    component: Profile
+    name: "portfolio",
+    component: Portfolio
   },
   {
     path: "/:title",
