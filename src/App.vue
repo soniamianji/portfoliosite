@@ -2,7 +2,7 @@
   <v-app>
     <v-app-bar app flat extended>
       <v-toolbar-title class="logoStyle mt-12 pl-8">
-        <v-btn text to="/" @click="$vuetify.goTo('#intro')" class="text-none">Sonia Johnsson</v-btn>
+        <v-btn text to="/" @click="$vuetify.goTo('#intro')" class="text-none">Sonia Mianji</v-btn>
       </v-toolbar-title>
 
       <v-toolbar-items class="bodyFonts mx-auto mt-12">
