@@ -35,7 +35,7 @@
     <router-view />
     <v-footer>
       <v-row justify="center" class="bodyFonts" no-gutters>
-        Sonia Johnsson -
+        <p>Sonia Mianji -</p>
         &copy;
         {{ new Date().getFullYear() }}
       </v-row>
