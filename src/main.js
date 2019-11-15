@@ -4,6 +4,11 @@ import router from "./router";
 import vuetify from "./plugins/vuetify";
 import "@fortawesome/fontawesome-free/css/all.css";
 import "@fortawesome/fontawesome-free/js/all.js";
+import VueAnalytics from "vue-analytics";
+
+Vue.use(VueAnalytics, {
+  id: "UA-45624613-1"
+});
 
 Vue.config.productionTip = false;
 
