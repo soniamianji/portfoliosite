@@ -7,7 +7,7 @@ import "@fortawesome/fontawesome-free/js/all.js";
 import VueAnalytics from "vue-analytics";
 
 Vue.use(VueAnalytics, {
-  id: "UA-45624613-1"
+  id: "UA-152611120-1"
 });
 
 Vue.config.productionTip = false;
