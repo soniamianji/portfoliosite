@@ -94,6 +94,48 @@ let Data = [
         }
       ]
     }
+  },
+  {
+    title: "Job search Application",
+    data: {
+      date: "FALL || 2019",
+      header: "job Search Application",
+      role: "developer, designer",
+      content: [
+        {
+          type: "img",
+          src: [require("../src/assets/projects/thisisme/jobsearch.png")]
+        },
+
+        {
+          type: "text",
+          parag:
+            "A job search application built with React,Redux, Node.js, express.js and mongoDB and it is deployed on Digital Ocean. When looking for an internship, I came up with the idea of having a digital business card and by updating the information on the card I would get the job ads. So I created thisisme. Currently it mostly supports job ads in Sweden.",
+          link: ["http://thisismenow.tech/"]
+        }
+      ]
+    }
+  },
+  {
+    title: "Website",
+    data: {
+      date: "spring || 2020",
+      header: "5 devs Website",
+      role: "developer,",
+      content: [
+        {
+          type: "img",
+          src: [require("../src/assets/thumbnails/jobsearch.png")]
+        },
+
+        {
+          type: "text",
+          parag:
+            "A website built with React and Typescript as my internship project.",
+          link: ["https://5devs.netlify.app"]
+        }
+      ]
+    }
   }
 ];
 

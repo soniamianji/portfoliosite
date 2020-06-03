@@ -1,5 +1,19 @@
 let Data = [
   {
+    title: "Website",
+    header: "WebSite",
+    date: "spring || 2020",
+    image: require("@/assets/thumbnails/5devs.gif"),
+    description: "Company websited created with React/Typescript"
+  },
+  {
+    title: "Job search Application",
+    header: "job Search Application ",
+    date: "fall || 2019",
+    image: require("@/assets/thumbnails/jobsearch.png"),
+    description: "A job search application with your own digital business card"
+  },
+  {
     title: "appRedesign",
     header: "WhatsApp Reimagined",
     date: "FALL || 2018",
