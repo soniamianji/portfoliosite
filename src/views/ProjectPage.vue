@@ -3,7 +3,7 @@
     <v-container pa-5 class="customWidth">
       <v-row>
         <v-col cols="12" md="12">
-          <v-expansion-panels>
+          <v-expansion-panels v-model="panel">
             <v-expansion-panel class="elevation-0" v-for="(item,i) in 1" :key="i">
               <v-expansion-panel-header class="bodyFonts font-weight-black">
                 {{title}}
@@ -53,7 +53,8 @@ export default {
   data() {
     return {
       title: this.$route.params.title,
-      projectData: ""
+      projectData: "",
+      panel: 0
     };
   },
   created() {
