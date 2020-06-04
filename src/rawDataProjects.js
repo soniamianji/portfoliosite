@@ -104,7 +104,10 @@ let Data = [
       content: [
         {
           type: "img",
-          src: [require("../src/assets/projects/thisisme/jobsearch.png")]
+          src: [
+            require("../src/assets/projects/thisisme/thisisme1.png"),
+            require("../src/assets/projects/thisisme/jobsearch.png")
+          ]
         },
 
         {

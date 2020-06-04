@@ -30,7 +30,9 @@
             >Adobe PhotoShop, Illustrator, InDesign, Premiere, AfterEffect.</p>
 
             <h5 class="headerFonts">Languages</h5>
-            <p class="bodyFonts grey--text text--lighten">PHP, JavaScript, HTML / CSS / SASS.</p>
+            <p
+              class="bodyFonts grey--text text--lighten"
+            >PHP, JavaScript, TypeScript, HTML / CSS / SASS.</p>
 
             <h5 class="headerFonts">DBs</h5>
             <p class="bodyFonts grey--text text--lighten">MongoDB, Mysql, SQL, Sqlite3</p>
@@ -47,8 +49,8 @@
         <v-col cols="12" sm="6" justify="center">
           <div class="pt-8">
             <h3 class="headerFonts pb-6">Find me</h3>
-            <h4 class="headerFonts">Torsgatan 15c</h4>
-            <h4 class="headerFonts">561 30 Huskvarna Sweden</h4>
+            <h4 class="headerFonts">Kungsladugårdsgatan94</h4>
+            <h4 class="headerFonts">41476 Gothenburg Sweden</h4>
           </div>
           <div class="pt-8">
             <h4 class="headerFonts" href="mailto:soniamianji1@gmail.com">soniamianji1@gmail.com</h4>
