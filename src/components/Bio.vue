@@ -10,10 +10,10 @@
           <h2 class="headerFonts pb-6">About Me</h2>
           <p
             class="bodyFonts grey--text"
-          >My name is Sonia Mianji Johnsson. I am born in 91 and I am a newly graduated frent-end developer and UX designer.</p>
+          >My name is Sonia Mianji Johnsson. I am born in 91 and graduated 2020 from New Media Design at Jönköping University. Currently I reside in Gothenburg, Sweden.</p>
           <p
             class="bodyFonts grey--text"
-          >I studied New Media Design at Jönköping University and as the name might suggest its an interdisciplinary education where I have acquired skill sets ranging from project management, brand development, motion graphics, UX-design with an emphasis on programming and web development. I am very tenacious in my pursuit of knowledge. Programming and web-development is my primary focus and interest. I am a good team player and as such I aspire to one day assemble my own brilliant team of highly skilled codemonkeys and together we will make it our business to improve the human experience by one line of code at the time.</p>
+          >As the name might suggest New Media Design was an interdisciplinary education where I acquired skill sets ranging from project management, brand development, graphic design, motion graphics, UX-design with an emphasis on programming and web development. I am very tenacious in my pursuit of knowledge. Programming and web-development is my primary focus and interest. I am a good team player and as such I aspire to one day assemble my own crew of codemonkeys and together we will make it our business to improve the human experience, one line of code at the time.</p>
         </v-col>
       </v-row>
       <v-divider></v-divider>

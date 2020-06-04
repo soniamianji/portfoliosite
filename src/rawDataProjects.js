@@ -106,14 +106,14 @@ let Data = [
           type: "img",
           src: [
             require("../src/assets/projects/thisisme/thisisme1.png"),
-            require("../src/assets/projects/thisisme/jobsearch.png")
+            require("../src/assets/projects/thisisme/thisisme2.png")
           ]
         },
 
         {
           type: "text",
           parag:
-            "A job search application built with React,Redux, Node.js, express.js and mongoDB and it is deployed on Digital Ocean. When looking for an internship, I came up with the idea of having a digital business card and by updating the information on the card I would get the job ads. So I created thisisme. Currently it mostly supports job ads in Sweden.",
+            "Thisismenow.tech is a prototype a job search application I built with React, Redux, Node.js, Express.js and MongoDB. Deployed on Digital Ocean. The app is essentially a digital business card that fetch and match open job listings with the users profile.",
           link: ["http://thisismenow.tech/"]
         }
       ]
@@ -137,7 +137,7 @@ let Data = [
         {
           type: "text",
           parag:
-            "A website built with React and Typescript as my internship project.",
+            "UX and front-end. Part of an internship project. Built with React and Typescript. Three.js utilized for transitions. ",
           link: ["https://5devs.netlify.app"]
         }
       ]
