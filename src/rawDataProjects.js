@@ -125,7 +125,7 @@ let Data = [
       content: [
         {
           type: "img",
-          src: [require("../src/assets/thumbnails/jobsearch.png")]
+          src: [require("../src/assets/projects/5devs/5devs.png")]
         },
 
         {
