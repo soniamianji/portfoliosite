@@ -46,7 +46,16 @@ let Data = [
           parag:
             "UX design for kohlanta property management. This was built to suggest improvemnets to the already existing website.",
           link: [
-            "https://xd.adobe.com/view/e6817629-6f0d-45f8-7c15-57d8f84dadab-90b0/"
+            {
+              url:
+                "https://xd.adobe.com/view/e6817629-6f0d-45f8-7c15-57d8f84dadab-90b0/",
+              btnText: "Mobile view"
+            },
+            {
+              url:
+                "https://xd.adobe.com/view/dd60eda8-9e89-47c9-5244-2513823fe012-ab51/",
+              btnText: "Desktop view "
+            }
           ]
         }
       ]
@@ -69,7 +78,12 @@ let Data = [
           type: "text",
           parag:
             "Bigpharma is a prototype of a survey app that collects, curates and analyzes users data in the context of pharmacetical development. It is bult with Vue.js, Node.js and Express.js.",
-          link: ["https://inspiring-feynman-0b43cb.netlify.com"]
+          link: [
+            {
+              url: "https://inspiring-feynman-0b43cb.netlify.com",
+              btnText: "Check it out live"
+            }
+          ]
         }
       ]
     }
@@ -90,7 +104,12 @@ let Data = [
           type: "text",
           parag:
             "Dropdead is a browser based jump and shoot game that is built with Javascript and Phaser framework.",
-          link: ["https://soniamianji.github.io"]
+          link: [
+            {
+              url: "https://soniamianji.github.io",
+              btnText: "Play the game"
+            }
+          ]
         }
       ]
     }
@@ -114,7 +133,9 @@ let Data = [
           type: "text",
           parag:
             "Thisismenow.tech is a prototype a job search application I built with React, Redux, Node.js, Express.js and MongoDB. Deployed on Digital Ocean. The app is essentially a digital business card that fetch and match open job listings with the users profile.",
-          link: ["http://thisismenow.tech/"]
+          link: [
+            { url: "http://thisismenow.tech/", btnText: "Check it out live" }
+          ]
         }
       ]
     }
@@ -138,7 +159,9 @@ let Data = [
           type: "text",
           parag:
             "UX and front-end. Part of an internship project. Built with React and Typescript. Three.js utilized for transitions. ",
-          link: ["https://5devs.netlify.app"]
+          link: [
+            { url: "https://5devs.netlify.app", btnText: "Check it out live" }
+          ]
         }
       ]
     }

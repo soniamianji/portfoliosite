@@ -22,10 +22,11 @@
                 <v-btn
                   v-for="link in projectData.data.content[1].link"
                   :key="link.index"
-                  :href="link"
+                  :href="link.url"
+                  :style="{marginRight:'20px'}"
                   class="grey--text text--darken-1 text-none"
                   outlined
-                >Check it out live</v-btn>
+                >{{link.btnText}}</v-btn>
               </v-expansion-panel-content>
             </v-expansion-panel>
           </v-expansion-panels>
@@ -64,6 +65,7 @@ export default {
       }
     }
     console.log(this.projectData.data.content[1].link);
+    console.log(this.projectData.data.content[1].link[0].url);
   }
 };
 </script>
