@@ -3,9 +3,14 @@
     <v-container class="pt-10">
       <v-row class="pb-10">
         <v-col cols="12" sm="6" justify="center">
-          <v-img src="../assets/soniapic.png" class="grey lighten-2" aspect-ratio="2" height="400"></v-img>
+          <v-img src="../assets/soniapic.jpeg" class="grey lighten-2" aspect-ratio="2" height="400">
+            <template v-slot:placeholder>
+              <v-row class="fill-height ma-0" align="center" justify="center">
+                <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+              </v-row>
+            </template>
+          </v-img>
         </v-col>
-
         <v-col cols="12" md="6">
           <h2 class="headerFonts pb-6">About Me</h2>
           <p
@@ -23,25 +28,20 @@
             <h3 class="headerFonts pb-6">Skillsets</h3>
             <h5 class="headerFonts">UX and Prototyping tools</h5>
             <p class="bodyFonts grey--text text--lighten">XD, Figma, Sketch</p>
-
             <h5 class="headerFonts">Graphics and motion graphics</h5>
             <p
               class="bodyFonts grey--text text--lighten"
             >Adobe PhotoShop, Illustrator, InDesign, Premiere, AfterEffect.</p>
-
             <h5 class="headerFonts">Languages</h5>
             <p
               class="bodyFonts grey--text text--lighten"
             >PHP, JavaScript, TypeScript, HTML / CSS / SASS.</p>
-
             <h5 class="headerFonts">DBs</h5>
             <p class="bodyFonts grey--text text--lighten">MongoDB, Mysql, SQL, Sqlite3</p>
-
             <h5 class="headerFonts">Frameworks, SSE´s and Libs</h5>
             <p
               class="bodyFonts grey--text text--lighten"
             >NodeJS. Express.js, React.js, Redux, Bootstrap, Wordpress, Phaser, Vue.js</p>
-
             <h5 class="headerFonts">Versioning tools</h5>
             <p class="bodyFonts grey--text text--lighten">GIT</p>
           </div>
@@ -80,5 +80,6 @@
     </v-container>
   </div>
 </template>
+
 
 

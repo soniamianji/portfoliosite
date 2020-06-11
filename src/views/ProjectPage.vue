@@ -12,9 +12,7 @@
                 </template>
               </v-expansion-panel-header>
               <v-expansion-panel-content class="bodyFonts">Date: {{projectData.data.date}}</v-expansion-panel-content>
-
               <v-expansion-panel-content class="bodyFonts">{{projectData.data.content[1].parag}}</v-expansion-panel-content>
-
               <v-expansion-panel-content
                 v-if="projectData.data.content[1].link.length > 0"
                 class="bodyFonts"
@@ -32,12 +30,17 @@
           </v-expansion-panels>
         </v-col>
       </v-row>
-
       <div>
         <v-row no-gutters>
           <v-col cols="12" v-for="items in projectData.data.content[0].src" :key="items">
             <a :href="projectData.data.content[1].link[0]">
-              <v-img :src="items" class="grey lighten-2" height="100%" align="center"></v-img>
+              <v-img :src="items" class="grey lighten-2" height="100%" align="center">
+                <template v-slot:placeholder>
+                  <v-row class="fill-height ma-0" align="center" justify="center">
+                    <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                  </v-row>
+                </template>
+              </v-img>
             </a>
           </v-col>
         </v-row>
