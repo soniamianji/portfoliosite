@@ -15,11 +15,6 @@ export default {
   components: { Intro, Bio, Projects },
   data() {
     return {};
-  },
-  methods: {
-    onScroll(e) {
-      console.log("hi");
-    }
   }
 };
 </script>
