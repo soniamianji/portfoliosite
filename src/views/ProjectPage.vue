@@ -34,7 +34,13 @@
         <v-row no-gutters>
           <v-col cols="12" v-for="items in projectData.data.content[0].src" :key="items">
             <a :href="projectData.data.content[1].link[0]">
-              <v-img :src="items" class="grey lighten-2" height="100%" align="center">
+              <v-img
+                :src="items"
+                :lazy-src="items"
+                class="grey lighten-2"
+                height="100%"
+                align="center"
+              >
                 <template v-slot:placeholder>
                   <v-row class="fill-height ma-0" align="center" justify="center">
                     <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>

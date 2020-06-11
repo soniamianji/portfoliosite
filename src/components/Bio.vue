@@ -3,7 +3,13 @@
     <v-container class="pt-10">
       <v-row class="pb-10">
         <v-col cols="12" sm="6" justify="center">
-          <v-img src="../assets/soniapic.jpeg" class="grey lighten-2" aspect-ratio="2" height="400">
+          <v-img
+            src="../assets/soniapic.jpeg"
+            lazy-src="../assets/soniapic.jpeg"
+            class="grey lighten-2"
+            aspect-ratio="2"
+            height="400"
+          >
             <template v-slot:placeholder>
               <v-row class="fill-height ma-0" align="center" justify="center">
                 <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>

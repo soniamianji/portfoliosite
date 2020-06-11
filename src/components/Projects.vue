@@ -6,11 +6,17 @@
           <v-card :elevation="hover ? 12 : 2" :class="{ 'on-hover': hover }">
             <v-img
               :src="item.image"
+              :lazy-src="item.image"
               class="grey lighten-2"
               aspect-ratio="2"
               max-height="300"
               align="center"
             >
+              <template v-slot:placeholder>
+                <v-row class="fill-height ma-0" align="center" justify="center">
+                  <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
+                </v-row>
+              </template>
               <v-expand-transition>
                 <div
                   v-if="hover"
@@ -24,11 +30,6 @@
                     :to="'/' + item.title"
                   >{{ item.title }}</v-btn>
                 </div>
-                <template v-slot:placeholder>
-                  <v-row class="fill-height ma-0" align="center" justify="center">
-                    <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                  </v-row>
-                </template>
               </v-expand-transition>
             </v-img>
           </v-card>
